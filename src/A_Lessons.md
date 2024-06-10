@@ -64,3 +64,34 @@ React.useState("react");
     )
 
 }
+
+## An event
+
+-  An event just simply referes to a function in an html tag that calls a js
+   function.
+
+-  eg in plain html <button onclick="sayHello()">Hi !</button>
+
+-  in React <button onClick={sayHello}>Hi !</button>
+
+*  Also, there is a difference in the funciton definition as follows:
+
+*  in React: const handleClick = () => { console.log("This is onClick event!")
+   setData("vue") }
+
+*  In plain.js /HTML
+   <script>
+         function handleClick() {
+            console.log("This is a click event");
+         }
+   </script>
+
+## Passing data to a React Event:
+
+-  To pass data to a react event, we utilize a call back function as follows.
+
+-  Function <button type="button" onClick={() => handleClick("vue")}> Click
+   ME!</button>
+
+*  It is received as follows: const handleClick = (course) => {
+   console.log("This is onClick event!") setData("vue") }
