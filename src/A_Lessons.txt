@@ -8,3 +8,9 @@
 
 *  You can also receive a props through a constructor.
 *  Whenever you update a state, react will automatically render a component.
+
+## State Shortcut Initialization
+
+state = {course: "react"};
+
+<p> State: This is {this.state.course} course. </p>

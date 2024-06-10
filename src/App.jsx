@@ -9,7 +9,7 @@ function App() {
         This is children
       </SubComponent>
 
-      <ClassBasedComponent test="This is test props" />
+      <ClassBasedComponent test="🤬" />
     </div>
   )
 }
