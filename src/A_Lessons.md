@@ -33,13 +33,17 @@ state = {course: "react"};
 
 ## Updating State
 
-* React provides us with methods to update states within a class based component. 
+-  React provides us with methods to update states within a class based
+   component.
 
-* We update a state through the following call back function. :
+-  We update a state through the following call back function. :
 
-* this.setState((oldState) => {
-            return{
-                course: "vue",
-                counter: oldState.counter + 1,
-            };
-        });
+-  this.setState((oldState) => { return{ course: "vue", counter:
+   oldState.counter + 1, }; });
+
+## componentWillUnmount() {}
+
+-  // Component will unmount will be called before closing your component.
+-  componentWillUnmount(){}
+-  More information about it will be given during the routing phase of the
+   course.
