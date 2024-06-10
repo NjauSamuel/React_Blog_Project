@@ -1,5 +1,6 @@
 import SubComponent from "./components/SubComponent";
 import ClassBasedComponent from "./components/ClassBasedComponent";
+import FunctionalComponent from "./components/FunctionalComponent";
 
 function App() {
   return (
@@ -9,7 +10,9 @@ function App() {
         This is children
       </SubComponent>
 
-      <ClassBasedComponent test="🤬" />
+      <ClassBasedComponent test="nice test" />
+
+      <FunctionalComponent />
     </div>
   )
 }

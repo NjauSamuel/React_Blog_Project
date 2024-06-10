@@ -23,7 +23,7 @@ class ClassBasedComponent extends React.Component{
         console.log("before render");
         return (
             <div>
-                <p><u>Class based Component</u></p>
+                <p className="py-4"><u>Class based Component</u></p>
 
                 <p>State: This is a {this.state.course} course. </p>
             </div>

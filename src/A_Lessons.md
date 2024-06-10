@@ -47,3 +47,20 @@ state = {course: "react"};
 -  componentWillUnmount(){}
 -  More information about it will be given during the routing phase of the
    course.
+
+## How to use state in functional components.
+
+-  import React from "react";
+
+const FunctionalComponent = () => { const [data, setData] =
+React.useState("react");
+
+    console.log(data)
+
+    return(
+        <div>
+            <p className="py-4"><u>This is a functional component. </u></p>
+        </div>
+    )
+
+}
