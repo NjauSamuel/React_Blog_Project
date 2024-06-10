@@ -30,3 +30,16 @@ state = {course: "react"};
    `componentDidMount(){}` method, thus, after updating our state, react
    automatically rendered this component. "Just keep in mind it is only after
    rendering the jsx element that this component is actually called. '
+
+## Updating State
+
+* React provides us with methods to update states within a class based component. 
+
+* We update a state through the following call back function. :
+
+* this.setState((oldState) => {
+            return{
+                course: "vue",
+                counter: oldState.counter + 1,
+            };
+        });

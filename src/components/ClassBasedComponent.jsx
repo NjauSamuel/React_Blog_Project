@@ -2,10 +2,18 @@ import React from "react";
 
 class ClassBasedComponent extends React.Component{
     
-    state = {course: "react"};
+    state = {course: "react", counter: 0};
 
     componentDidMount(){
         console.log("after render");
+        //this.setState({course: "vue", counter: this.state.counter + 1});
+
+        this.setState((oldState) => {
+            return{
+                course: "vue",
+                counter: oldState.counter + 1,
+            };
+        });
     }
 
     render(){
