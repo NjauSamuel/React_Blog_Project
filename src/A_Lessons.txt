@@ -1,3 +1,5 @@
+# STATE
+
 ## State
 
 -  A state is a components' own data thus why in a class, you can access the
@@ -14,3 +16,17 @@
 state = {course: "react"};
 
 <p> State: This is {this.state.course} course. </p>
+
+## componentDidMount(){}
+
+-  `componentDidMount(){}` is nothing but a method in a class based component.
+-  When a jsx element is rendered, this `componentDidMount(){}` method is called
+   automatically.
+
+### When to use componentDidMount(){}
+
+-  just imagine you want to show some post list which comes from an API request.
+   After rendering all the jsx, you call this API through this
+   `componentDidMount(){}` method, thus, after updating our state, react
+   automatically rendered this component. "Just keep in mind it is only after
+   rendering the jsx element that this component is actually called. '

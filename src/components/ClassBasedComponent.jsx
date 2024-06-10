@@ -4,7 +4,12 @@ class ClassBasedComponent extends React.Component{
     
     state = {course: "react"};
 
+    componentDidMount(){
+        console.log("after render");
+    }
+
     render(){
+        console.log("before render");
         return (
             <div>
                 <p><u>Class based Component</u></p>
