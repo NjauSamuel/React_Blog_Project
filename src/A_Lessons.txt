@@ -1,0 +1,10 @@
+## State
+
+-  A state is a components' own data thus why in a class, you can access the
+   state using the `this` keyword.
+-  Props is not a components own data it is data passed to another component.
+-  In a class based component, a state is an object. So we initialize state in a
+   constructor.
+
+*  You can also receive a props through a constructor.
+*  Whenever you update a state, react will automatically render a component.
