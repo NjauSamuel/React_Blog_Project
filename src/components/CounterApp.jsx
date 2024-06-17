@@ -17,9 +17,9 @@ const CounterApp = () => {
 
             <p className="py-3"><u>Counter-App : </u></p>
 
-            {counter > 0 ? <button onClick={handleSubtract}>-</button> :  <button>-</button>}
-            <span>{counter}</span>
-            <button onClick={handleAdd}>+</button>
+            {counter > 0 ? <button onClick={handleSubtract} className="bg-slate-50">-</button> :  <button className="bg-slate-50">-</button>}
+            <span className="mx-1">{counter}</span>
+            <button onClick={handleAdd} className="bg-slate-50">+</button>
         </div>
     )
 }

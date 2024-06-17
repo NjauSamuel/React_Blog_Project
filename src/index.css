@@ -15,22 +15,31 @@ body {
 h1 {
    font-size: 2.2em;
    line-height: 1;
+   padding-bottom: 16px;
 }
 
-button {
+button,
+#submit {
    border-radius: 8px;
    border: 1px solid transparent;
    padding: 0.6em 1.2em;
-   background-color: #f9f9f9;
    font-weight: bold;
    cursor: pointer;
    transition: transform 0.1s ease-in-out;
+   margin-top: 9px;
+   margin-bottom: 9px;
 }
 
-button:active {
+button:active,
+#submit:active {
    transform: translateY(1px); /* Move down 1 pixel on press */
 }
 
 button:hover {
    border-color: #646cff;
+}
+
+#submit {
+   margin-top: 24px;
+   margin-bottom: 24px;
 }
