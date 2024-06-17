@@ -4,6 +4,7 @@ import FunctionalComponent from "./components/FunctionalComponent";
 import ConditionalRendering from "./components/ConditionalRendering";
 import List from "./components/List";
 import CounterApp from "./components/CounterApp";
+import Form from "./components/Form";
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
 
       
       <p className="pt-2">This is a root component. </p>
+      
       <SubComponent>
         This is children
       </SubComponent>
@@ -26,6 +28,9 @@ function App() {
       <List />
 
       <CounterApp />
+
+      <Form />
+
     </div>
   )
 }
