@@ -12,7 +12,8 @@ const ConditionalRendering = () => {
     isLoggedIn ? (text = "Welcome user!") : (text = "Click the login button to login!")
 
     return (
-        <div>
+        <div className="pt-2">
+            <hr />
             <p className="pt-3 pb-2 "><u>Conditional Rendering</u></p>
             {/* expression ? true-statement : false-statement */}
             {course === "react" ? (<p>This is react course</p>) : course === "vue" ? (<p>This is vue course</p>) : null}

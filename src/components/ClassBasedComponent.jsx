@@ -10,7 +10,7 @@ class ClassBasedComponent extends React.Component{
 
         this.setState((oldState) => {
             return{
-                course: "vue",
+                course: "React",
                 counter: oldState.counter + 1,
             };
         });
@@ -22,10 +22,11 @@ class ClassBasedComponent extends React.Component{
     render(){
         console.log("before render");
         return (
-            <div>
-                <p className="py-4"><u>Class based Component</u></p>
+            <div className="pt-2">
+                <hr />
+                <p className="py-4"><u>This is a Class based Component</u></p>
 
-                <p>State: This is a {this.state.course} course. </p>
+                <p>State: Welcome to {this.state.course} course. </p>
             </div>
         )
     }

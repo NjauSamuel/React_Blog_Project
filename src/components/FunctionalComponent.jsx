@@ -14,7 +14,8 @@ const FunctionalComponent = () => {
     console.log(data)
 
     return(
-        <div>
+        <div className="pt-2">
+            <hr />
             <p className="py-4"><u>This is a functional component. </u></p>
 
             <button type="button" onClick={() => handleClick("vue")} className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded" >Click Me !</button>
