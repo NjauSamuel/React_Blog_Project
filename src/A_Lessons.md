@@ -95,3 +95,9 @@ React.useState("react");
 
 *  It is received as follows: const handleClick = (course) => {
    console.log("This is onClick event!") setData("vue") }
+
+## Conditional Rendering Uses Plain JS just as follows:
+
+{/_ expression ? true-statement : false-statement _/} {course === "react" ?
+(<p>This is react course</p>) : course === "vue" ? (<p>This is vue course</p>) :
+null}

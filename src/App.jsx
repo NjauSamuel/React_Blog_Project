@@ -1,6 +1,7 @@
 import SubComponent from "./components/SubComponent";
 import ClassBasedComponent from "./components/ClassBasedComponent";
 import FunctionalComponent from "./components/FunctionalComponent";
+import ConditionalRendering from "./components/ConditionalRendering";
 
 function App() {
   return (
@@ -13,6 +14,8 @@ function App() {
       <ClassBasedComponent test="nice test" />
 
       <FunctionalComponent />
+
+      <ConditionalRendering />
     </div>
   )
 }
