@@ -3,6 +3,7 @@ import ClassBasedComponent from "./components/ClassBasedComponent";
 import FunctionalComponent from "./components/FunctionalComponent";
 import ConditionalRendering from "./components/ConditionalRendering";
 import List from "./components/List";
+import CounterApp from "./components/CounterApp";
 
 function App() {
   return (
@@ -23,6 +24,8 @@ function App() {
       <ConditionalRendering />
 
       <List />
+
+      <CounterApp />
     </div>
   )
 }
