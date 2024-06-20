@@ -8,6 +8,7 @@ import Form from "./components/Form";
 import RegistrationForm from "./components/RegistrationForm";
 import ClickCounter from "./components/ClickCounter";
 import HoverCounter from "./components/HoverCounter";
+import RenderProps from "./components/RenderProps";
 
 function App() {
   return (
@@ -39,6 +40,8 @@ function App() {
       <ClickCounter />
 
       <HoverCounter />
+
+      <RenderProps course="React" functionProp={(isFavourite) => (isFavourite ? 'React is favourite. ' : 'Vue')} />
 
     </div>
   )
