@@ -10,9 +10,7 @@ const withCounter = (Component) => {
             setCounter(oldValue => oldValue + 1)
         }
 
-        return (
-            <Component counter={counter} handleIncrement={handleIncrement} />
-        )
+        return <Component counter={counter} handleIncrement={handleIncrement} />;
     }
 
     return NewComponent;

@@ -1,11 +1,6 @@
-import { useState } from "react";
+import withCounter from "./HOC/withCounter";
 
-const ClickCounter = () => {
-    const [counter, setCounter] = useState(0)
-
-    const handleIncrement = () => {
-        setCounter(oldValue => oldValue + 1)
-    }
+const ClickCounter = ({counter, handleIncrement}) => {
 
     return(
         <div className="my-3">
@@ -25,4 +20,4 @@ const ClickCounter = () => {
     )
 }
 
-export default ClickCounter;
+export default withCounter(ClickCounter);
