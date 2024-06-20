@@ -6,6 +6,8 @@ import List from "./components/List";
 import CounterApp from "./components/CounterApp";
 import Form from "./components/Form";
 import RegistrationForm from "./components/RegistrationForm";
+import ClickCounter from "./components/ClickCounter";
+import HoverCounter from "./components/HoverCounter";
 
 function App() {
   return (
@@ -33,6 +35,10 @@ function App() {
       <Form />
 
       <RegistrationForm />
+
+      <ClickCounter />
+
+      <HoverCounter />
 
     </div>
   )

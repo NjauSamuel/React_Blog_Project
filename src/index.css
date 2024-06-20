@@ -43,3 +43,17 @@ button:hover {
    margin-top: 24px;
    margin-bottom: 24px;
 }
+
+h2 {
+   font-weight: 900;
+   margin-top: 1rem /* 16px */;
+   margin-bottom: 1rem /* 16px */;
+   font-size: 1.25rem /* 20px */;
+   line-height: 1.75rem /* 28px */;
+}
+
+#button-like {
+   max-width: fit-content;
+   padding: 0.6em 1.2em;
+   border-radius: 8px;
+}
