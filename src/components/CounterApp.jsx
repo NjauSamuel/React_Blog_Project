@@ -15,7 +15,7 @@ const CounterApp = () => {
         <div className="pt-2">
             <hr />
 
-            <p className="py-3"><u>Counter-App : </u></p>
+            <h2><u>Counter-App : </u></h2>
 
             {counter > 0 ? <button onClick={handleSubtract} className="bg-slate-50">-</button> :  <button className="bg-slate-50">-</button>}
             <span className="mx-1">{counter}</span>

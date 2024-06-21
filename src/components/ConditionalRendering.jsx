@@ -14,7 +14,7 @@ const ConditionalRendering = () => {
     return (
         <div className="pt-2">
             <hr />
-            <p className="pt-3 pb-2 "><u>Conditional Rendering</u></p>
+            <h2><u>Conditional Rendering</u></h2>
             {/* expression ? true-statement : false-statement */}
             {course === "react" ? (<p>This is react course</p>) : course === "vue" ? (<p>This is vue course</p>) : null}
 

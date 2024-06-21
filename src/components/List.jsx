@@ -11,7 +11,7 @@ const List = () => {
         <div className="pt-2">
             <hr/>
 
-            <p className="py-2"><u>Displaying Items In a List: </u></p>
+            <h2><u>Displaying Items In a List: </u></h2>
             
             <p >Popular course names: </p>
 

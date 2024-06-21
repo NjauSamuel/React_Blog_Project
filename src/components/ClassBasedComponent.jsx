@@ -24,7 +24,7 @@ class ClassBasedComponent extends React.Component{
         return (
             <div className="pt-2">
                 <hr />
-                <p className="py-4"><u>This is a Class based Component</u></p>
+                <h2><u>This is a Class based Component</u></h2>
 
                 <p>State: Welcome to {this.state.course} course. </p>
             </div>
