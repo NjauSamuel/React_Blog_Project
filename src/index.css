@@ -56,4 +56,6 @@ h2 {
    max-width: fit-content;
    padding: 0.6em 1.2em;
    border-radius: 8px;
+   margin-top: 9px;
+   margin-bottom: 9px;
 }

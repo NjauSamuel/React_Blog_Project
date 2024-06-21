@@ -9,6 +9,11 @@ import RegistrationForm from "./components/RegistrationForm";
 import ClickCounter from "./components/ClickCounter";
 import HoverCounter from "./components/HoverCounter";
 import RenderProps from "./components/RenderProps";
+import ClickCounterByHOC from "./components/ClickCounterByHOC";
+import HoverCounterByHOC from "./components/HoverCounterByHOC";
+import Counter from "./components/Counter";
+import ClickCounterByRenderProps from "./components/ClickCounterByRenderProps";
+import HoverCounterByRenderProps from "./components/HoverCounterByRenderProps";
 
 function App() {
   return (
@@ -42,6 +47,26 @@ function App() {
       <HoverCounter />
 
       <RenderProps course="React" functionProp={(isFavourite) => (isFavourite ? 'React is favourite. ' : 'Vue')} />
+
+      <ClickCounterByHOC />
+
+      <HoverCounterByHOC />
+
+      <Counter 
+        render={
+          (counter, handleIncrement) => (
+            <ClickCounterByRenderProps counter={counter} handleIncrement={handleIncrement} />
+          )
+        }
+      />
+
+      <Counter 
+        render={
+          (counter, handleIncrement) => (
+            <HoverCounterByRenderProps counter={counter} handleIncrement={handleIncrement} />
+          )
+        }
+      />
 
     </div>
   )
