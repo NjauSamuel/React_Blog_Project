@@ -8,7 +8,7 @@ const ClickCounter = ({counter, handleIncrement}) => {
 
             <h2><u>Higher Order Components</u></h2>
 
-            <p className="my-2 py-1 pl-2 bg-green-100">A Higher Order Component is a function that takes a component as a 
+            <p id="paragraph-like">A Higher Order Component is a function that takes a component as a 
                 parameter and returns new components. 
             </p>
 

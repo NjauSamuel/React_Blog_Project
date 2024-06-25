@@ -14,6 +14,7 @@ import HoverCounterByHOC from "./components/HoverCounterByHOC";
 import Counter from "./components/Counter";
 import ClickCounterByRenderProps from "./components/ClickCounterByRenderProps";
 import HoverCounterByRenderProps from "./components/HoverCounterByRenderProps";
+import ComponentOne from "./components/ComponentOne";
 
 function App() {
   return (
@@ -67,6 +68,8 @@ function App() {
           )
         }
       />
+
+      <ComponentOne />
 
     </div>
   )

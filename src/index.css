@@ -59,3 +59,15 @@ h2 {
    margin-top: 9px;
    margin-bottom: 9px;
 }
+
+#paragraph-like {
+   --tw-bg-opacity: 1;
+   background-color: rgb(220 252 231 / var(--tw-bg-opacity));
+   padding-left: 0.5rem /* 8px */;
+   padding-right: 0.5rem /* 8px */;
+   padding-top: 0.25rem /* 4px */;
+   padding-bottom: 0.25rem /* 4px */;
+   margin-top: 0.5rem /* 8px */;
+   margin-bottom: 0.5rem /* 8px */;
+   max-width: fit-content;
+}
