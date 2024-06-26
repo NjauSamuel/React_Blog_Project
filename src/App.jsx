@@ -15,6 +15,7 @@ import Counter from "./components/Counter";
 import ClickCounterByRenderProps from "./components/ClickCounterByRenderProps";
 import HoverCounterByRenderProps from "./components/HoverCounterByRenderProps";
 import ComponentOne from "./components/ComponentOne";
+import CourseContext from "./components/context/courseContext";
 
 function App() {
   return (
@@ -69,7 +70,9 @@ function App() {
         }
       />
 
-      <ComponentOne course="React" />
+      <CourseContext.Provider value={{courses: "React"}}>
+        <ComponentOne course="React" />
+      </CourseContext.Provider>
 
     </div>
   )
