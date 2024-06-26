@@ -69,7 +69,7 @@ function App() {
         }
       />
 
-      <ComponentOne />
+      <ComponentOne course="React" />
 
     </div>
   )

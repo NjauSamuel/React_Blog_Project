@@ -1,6 +1,6 @@
 import ComponentTwo from "./ComponentTwo";
 
-const ComponentOne = () => {
+const ComponentOne = ({course}) => {
     return(
         <div className="mt-5"> 
             <hr />
@@ -12,11 +12,15 @@ const ComponentOne = () => {
                 it is inneficient to pass a prop from one compenent to the nth component (Props Drilling) if the 
                 number of n components exceds two. <br/> <br/>
 
-                The Props Drilling issue can be solved through <b>Context API</b> <br/>
+                The Props Drilling issue can be solved through <b>Context API</b> <br/><br />
+
+                In this example, the <b>Course="React"</b> has been passed from App.jsx(Component One) to Component Three which is inefficient. 
                  
             </p>
 
-            <ComponentTwo />
+            <p id="paragraph-like">Component One</p>
+
+            <ComponentTwo course={course}/>
 
         </div>
     )

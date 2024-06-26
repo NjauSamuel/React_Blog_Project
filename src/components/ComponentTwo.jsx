@@ -1,11 +1,11 @@
 import ComponentThree from "./ComponentThree";
 
-const ComponentTwo = () => {
+const ComponentTwo = ({course}) => {
     return(
         <div>
             <p id="paragraph-like">Component Two</p>
 
-            <ComponentThree />
+            <ComponentThree course={course}/>
         </div>
     )
 }
