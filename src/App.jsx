@@ -17,6 +17,7 @@ import HoverCounterByRenderProps from "./components/HoverCounterByRenderProps";
 import ComponentOne from "./components/ComponentOne";
 import CourseContext from "./components/context/courseContext";
 import Introduction from "./components/Chapter_9/Hook_Introduction";
+import UseEffectCom from "./components/Chapter_9/UseEffect";
 
 function App() {
   return (
@@ -76,6 +77,8 @@ function App() {
       </CourseContext.Provider>
 
       <Introduction />
+
+      <UseEffectCom />
 
     </div>
   )
