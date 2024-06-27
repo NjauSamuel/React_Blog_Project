@@ -16,6 +16,7 @@ import ClickCounterByRenderProps from "./components/ClickCounterByRenderProps";
 import HoverCounterByRenderProps from "./components/HoverCounterByRenderProps";
 import ComponentOne from "./components/ComponentOne";
 import CourseContext from "./components/context/courseContext";
+import Introduction from "./components/Chapter_9/Hook_Introduction";
 
 function App() {
   return (
@@ -73,6 +74,8 @@ function App() {
       <CourseContext.Provider value={{courses: "React"}}>
         <ComponentOne course="React" />
       </CourseContext.Provider>
+
+      <Introduction />
 
     </div>
   )
