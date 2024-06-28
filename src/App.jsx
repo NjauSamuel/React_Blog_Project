@@ -19,6 +19,7 @@ import CourseContext from "./components/context/courseContext";
 import Introduction from "./components/Chapter_9/Hook_Introduction";
 import UseEffectCom from "./components/Chapter_9/UseEffect";
 import Timer from "./components/Chapter_9/Timer";
+import CleanUpInterval from "./components/Chapter_9/CleanUpInterval";
 
 function App() {
   return (
@@ -82,6 +83,8 @@ function App() {
       <UseEffectCom />
 
       <Timer />
+
+      <CleanUpInterval />
 
     </div>
   )
