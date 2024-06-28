@@ -21,6 +21,7 @@ import UseEffectCom from "./components/Chapter_9/UseEffect";
 import Timer from "./components/Chapter_9/Timer";
 import CleanUpInterval from "./components/Chapter_9/CleanUpInterval";
 import Posts from "./components/Chapter_9/Post";
+import MemoHook from "./components/Chapter_9/MemoHook";
 
 function App() {
   return (
@@ -88,6 +89,8 @@ function App() {
       <CleanUpInterval />
 
       <Posts />
+
+      <MemoHook/>
 
     </div>
   )
