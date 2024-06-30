@@ -35,36 +35,42 @@ const Form = () => {
     console.log(gender)
 
     return(
-        <div className="pt-2">
+        <div className="pt-2  grid lg:grid-cols-12">
 
-            <hr />
+            <hr className=" lg:col-span-12"/>
 
-            <h2 className="py-4 font-bold text-2xl"><u><center>React Forms</center></u></h2>
+            <h2 className="py-4 font-bold text-2xl lg:col-span-12"><u><center>React Forms</center></u></h2>
 
-            <form onSubmit={handleSubmit}>
-                <input name="course" value={course} onChange={handleChange} className="border border-slate-300 rounded-sm"/>
+            <form onSubmit={handleSubmit} className="col-span-8  col-start-3 grid">
 
-                <br />
+                <div className="form-floating flex items-center">
+                    <input name="course" id="course" value={course} onChange={handleChange} className="border border-slate-300 rounded-sm form-control"/>
+                    <label htmlFor="course">Course:</label>
+                </div>
 
-                <textarea name="desc" value={desc} onChange={handleChange} className="border border-slate-300 my-3"></textarea>
+                <div className="form-floating flex items-center">
+                    <textarea name="desc" id="desc" value={desc} onChange={handleChange} className="border border-slate-300 my-3 form-control"></textarea>
+                    <label htmlFor="desc">Description:</label>
+                </div>
 
-                <br />
+                <div className="form-floating2 flex items-center">
+                    <select name="country" value={country} onChange={handleChange} className="border border-slate-300 mb-5">
+                        <option value="USA">USA</option>
+                        <option value="Canada">Canada</option>
+                        <option value="UK">UK</option>
+                    </select>
+                </div>
 
-                <select name="country" value={country} onChange={handleChange} className="border border-slate-300 mb-5">
-                    <option value="USA">USA</option>
-                    <option value="Canada">Canada</option>
-                    <option value="UK">UK</option>
-                </select>
+                <div className="form-floating2 flex items-center">
+                    <input type="checkbox" name="agreement" checked={agreement} onChange={handleChange} className="mb-5" />
+                </div>
 
-                <br />
+                <div className="form-floating2 flex items-center">
+                    <input type="radio" name="gender" value="male" onChange={handleChange} /><br />                
+                    <input type="radio" name="gender" value="female" onChange={handleChange} /> <br />               
+                    <input type="radio" name="gender" value="others" onChange={handleChange} /> <br /> 
+                </div>
 
-                <input type="checkbox" name="agreement" checked={agreement} onChange={handleChange} className="mb-5" />
-
-                <br />
-
-                <input type="radio" name="gender" value="male" onChange={handleChange} /><br />                
-                <input type="radio" name="gender" value="female" onChange={handleChange} /> <br />               
-                <input type="radio" name="gender" value="others" onChange={handleChange} /> <br /> 
 
                 <input id="submit" type="submit" value="Save" className="my-5 bg-yellow-600 hover:bg-yellow-800 text-white" />              
 
