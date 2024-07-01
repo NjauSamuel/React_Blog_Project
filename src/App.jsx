@@ -23,6 +23,7 @@ import CleanUpInterval from "./components/Chapter_9/CleanUpInterval";
 import Posts from "./components/Chapter_9/Post";
 import MemoHook from "./components/Chapter_9/MemoHook";
 import UseRef from "./components/Chapter_9/useRef";
+import UseReducer from "./components/Chapter_9/useReducer";
 
 function App() {
   return (
@@ -94,6 +95,8 @@ function App() {
       <MemoHook/>
 
       <UseRef />
+
+      <UseReducer/>
 
     </div>
   )
