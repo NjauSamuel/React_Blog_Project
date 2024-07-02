@@ -13,7 +13,7 @@ const PostListWithoutReducer = () => {
                 try{
                     setLoading(true)
                     const response = await axios.get("https://jsonplaceholder.typicode.com/posts")
-                    setPosts(response.data.slice(0, 3))
+                    setPosts(response.data.slice(0, 2))
                     setLoading(false)
                 }catch(error){
                     setError(error.message)
@@ -30,7 +30,7 @@ const PostListWithoutReducer = () => {
         <div className="mt-6">
             <hr />
 
-            <h2><u>9. Improved Fetching Data From an API using useReducer Hook</u></h2>
+            <h2><u>9. Improved Fetching Data From an API using useEffect Hook</u></h2>
 
             <p id="paragraph-like">
 
@@ -39,8 +39,6 @@ const PostListWithoutReducer = () => {
 
                 In this example, we'll fetch data from an API with the help of  
                 <b> Axios</b> library from the API enpoint: <b>https://jsonplaceholder.typicode.com/posts</b>. <br/><br/>
-
-                We'll use <b>useReducer</b> hook instead of the previous useEffect. 
             </p>
 
             <h3 className="font-bold text-xl my-3 underline underline-offset-2">Post List: </h3>

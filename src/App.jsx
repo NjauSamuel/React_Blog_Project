@@ -26,6 +26,7 @@ import UseRef from "./components/Chapter_9/useRef";
 import UseReducer from "./components/Chapter_9/useReducer";
 import ComplexCounter from "./components/Chapter_9/ComplexCounter";
 import PostListWithoutReducer from "./components/Chapter_9/PostListWithoutReducer";
+import PostListWithReducer from "./components/Chapter_9/PostListWithReducer";
 
 function App() {
   return (
@@ -103,6 +104,8 @@ function App() {
       <ComplexCounter />
 
       <PostListWithoutReducer />
+
+      <PostListWithReducer/>
 
     </div>
   )
