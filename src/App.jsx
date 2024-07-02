@@ -25,6 +25,7 @@ import MemoHook from "./components/Chapter_9/MemoHook";
 import UseRef from "./components/Chapter_9/useRef";
 import UseReducer from "./components/Chapter_9/useReducer";
 import ComplexCounter from "./components/Chapter_9/ComplexCounter";
+import PostListWithoutReducer from "./components/Chapter_9/PostListWithoutReducer";
 
 function App() {
   return (
@@ -100,6 +101,8 @@ function App() {
       <UseReducer/>
 
       <ComplexCounter />
+
+      <PostListWithoutReducer />
 
     </div>
   )
