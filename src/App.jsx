@@ -27,6 +27,7 @@ import UseReducer from "./components/Chapter_9/useReducer";
 import ComplexCounter from "./components/Chapter_9/ComplexCounter";
 import PostListWithoutReducer from "./components/Chapter_9/PostListWithoutReducer";
 import PostListWithReducer from "./components/Chapter_9/PostListWithReducer";
+import PostListWithCustomHook from "./components/Chapter_9/PostListWithCustomHook";
 
 function App() {
   return (
@@ -106,6 +107,8 @@ function App() {
       <PostListWithoutReducer />
 
       <PostListWithReducer/>
+
+      <PostListWithCustomHook />
 
     </div>
   )
