@@ -19,6 +19,28 @@ const CssStyle = () => {
                 For this Lesson, we styled the <b>H1</b> tag <b>chapter 11</b> above, 
                 using CSS found in the directory <b>import "../../assets/CSS/style.css"</b> .
             </p>
+
+            <div className="pt-5">
+
+                <hr />
+
+                <h2>2. Linking CSS to The Whole HTML</h2>
+
+                <p id="paragraph-like">
+                    Instead of linking CSS link to an individual component, you can alternatively 
+                    link CSS to the whole HTML file using the following steps:
+
+                    <div className="my-2 ml-3">
+                        1. Go to the index.html file inside of your React file (having commented out the CSS in your react file). <br /> 
+                        2. At the bottom of the head section, type out the following: <br />
+                        <b><code>&lt;link rel="stylesheet" href="./src/assets/css/style.css" /&gt;</code></b>
+                    </div>
+
+                </p>
+
+            </div>
+
+
         </div>
     )
 }
