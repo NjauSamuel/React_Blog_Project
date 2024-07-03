@@ -1,4 +1,5 @@
 import "../../assets/CSS/style.css"
+import classes from "../../assets/CSS/test.module.css"
 
 const CssStyle = () => {
     return(
@@ -53,7 +54,7 @@ const CssStyle = () => {
                     The <b>paragraph</b> below has been styled with the help of <b>Style Props</b> .
                 </p>
 
-                <p style={{ "--tw-bg-opacity": 1, backgroundColor: "rgb(253 224 71 / var(--tw-bg-opacity))", paddingLeft: "0.5rem", paddingRight: "0.5rem", paddingTop: "0.25rem", paddingBottom: "0.25rem", marginTop: "0.5rem", marginBottom: "0.5rem", maxWidth: "fit-content"}} >
+                <p style={{ "--tw-bg-opacity": 1, backgroundColor: "rgb(254 240 138 / var(--tw-bg-opacity))", paddingLeft: "0.5rem", paddingRight: "0.5rem", paddingTop: "0.25rem", paddingBottom: "0.25rem", marginTop: "0.5rem", marginBottom: "0.5rem", maxWidth: "fit-content"}} >
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor 
                     incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
                     exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute 
@@ -64,13 +65,39 @@ const CssStyle = () => {
 
             </div>
 
+            <div className="pt-5 b">
+                <hr />
+
+                <h2>4. CSS Modules</h2>
+
+                <p id="paragraph-like">
+                    To start styling with <b>CSS Modules</b> , make a css file with the extention <b>modules.css</b> e.g., 
+                    <b> test.module.css</b> . <br /><br/>
+
+                    Next, import the CSS to a component using the syntax: <br /> 
+                    <b>import classes from "../../assets/CSS/test.module.css"</b>
+                    . <br /><br />
+
+                    The difference between normal css and css modules is the extra <b>.module.css</b> extension and 
+                    also the css modules require more than just the file path to import to a component. <br /> <br />
+
+                    The following container below has been styled using <b>CSS Modules</b>: 
+                </p>
+
+                <div className={classes.container}>
+                    <p className={classes.text}>CSS Module Styling</p>
+                </div>
+
+                <p id="paragraph-like">
+                    Importantly, CSS module styling is <b>component specific</b> . Meaning, the advanage
+                     of using a CSS Module is that the styles chosen will only be applied to a 
+                     specific module and not the global code. 
+                </p>
+
+            </div>
 
         </div>
     )
 }
 
 export default CssStyle
-
-const style = { 
-    "--tw-bg-opacity": 1, backgroundColor: "rgb(253 224 71 / var(--tw-bg-opacity))", paddingLeft: "0.5rem", paddingRight: "0.5rem", paddingTop: "0.25rem", paddingBottom: "0.25rem", marginTop: "0.5rem", marginBottom: "0.5rem", maxWidth: "fit-content"
-}

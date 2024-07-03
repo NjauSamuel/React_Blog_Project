@@ -1,0 +1,21 @@
+.text {
+   --tw-bg-opacity: 1;
+   background-color: rgb(220 252 231 / var(--tw-bg-opacity));
+   font-size: 30px;
+   color: black;
+   margin-top: 0.75rem;
+   margin-bottom: 0.75rem;
+   padding-left: 0.75rem;
+   padding-right: 0.75rem;
+   border-radius: 2px;
+}
+
+.container {
+   border: 2px solid black;
+   display: flex;
+   justify-content: center;
+   --tw-bg-opacity: 1;
+   background-color: rgb(37 99 235 / var(--tw-bg-opacity));
+   margin-top: 0.75rem;
+   margin-bottom: 0.75rem;
+}
