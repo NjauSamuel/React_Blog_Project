@@ -40,9 +40,37 @@ const CssStyle = () => {
 
             </div>
 
+            <div className="pt-5">
+                <hr />
+
+                <h2>3. Inline CSS in React</h2>
+
+                <p id="paragraph-like">
+                    React provides functionality to make inline CSS through the help of a <b>Style Props</b> . <br /> <br />
+
+                    In the style prop, CSS arguments are passed as objects. <br /> <br />
+
+                    The <b>paragraph</b> below has been styled with the help of <b>Style Props</b> .
+                </p>
+
+                <p style={{ "--tw-bg-opacity": 1, backgroundColor: "rgb(253 224 71 / var(--tw-bg-opacity))", paddingLeft: "0.5rem", paddingRight: "0.5rem", paddingTop: "0.25rem", paddingBottom: "0.25rem", marginTop: "0.5rem", marginBottom: "0.5rem", maxWidth: "fit-content"}} >
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor 
+                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                    exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute 
+                    irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat 
+                    nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa 
+                    qui officia deserunt mollit anim id est laborum.
+                </p>
+
+            </div>
+
 
         </div>
     )
 }
 
 export default CssStyle
+
+const style = { 
+    "--tw-bg-opacity": 1, backgroundColor: "rgb(253 224 71 / var(--tw-bg-opacity))", paddingLeft: "0.5rem", paddingRight: "0.5rem", paddingTop: "0.25rem", paddingBottom: "0.25rem", marginTop: "0.5rem", marginBottom: "0.5rem", maxWidth: "fit-content"
+}
