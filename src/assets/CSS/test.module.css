@@ -14,8 +14,32 @@
    border: 2px solid black;
    display: flex;
    justify-content: center;
+   align-items: center;
    --tw-bg-opacity: 1;
    background-color: rgb(37 99 235 / var(--tw-bg-opacity));
+   margin-top: 0.75rem;
+   margin-bottom: 0.75rem;
+}
+
+.text1 {
+   --tw-bg-opacity: 1;
+   background-color: rgb(251 146 60 / var(--tw-bg-opacity));
+   font-size: 30px;
+   color: black;
+   margin-top: 0.75rem;
+   margin-bottom: 0.75rem;
+   padding-left: 0.75rem;
+   padding-right: 0.75rem;
+   border-radius: 2px;
+}
+
+.container1 {
+   border: 2px solid black;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   --tw-bg-opacity: 1;
+   background-color: rgb(147 51 234 / var(--tw-bg-opacity));
    margin-top: 0.75rem;
    margin-bottom: 0.75rem;
 }

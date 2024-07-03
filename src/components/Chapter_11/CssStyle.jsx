@@ -1,7 +1,15 @@
 import "../../assets/CSS/style.css"
 import classes from "../../assets/CSS/test.module.css"
+import { useState } from "react"
 
 const CssStyle = () => {
+
+    const [color, setColor] = useState(true)
+
+    const handleClick = () => {
+        setColor(!color)
+    }
+
     return(
         <div className="mt-5">
             <hr />
@@ -92,6 +100,26 @@ const CssStyle = () => {
                     Importantly, CSS module styling is <b>component specific</b> . Meaning, the advanage
                      of using a CSS Module is that the styles chosen will only be applied to a 
                      specific module and not the global code. 
+                </p>
+
+            </div>
+
+            <div className="mt-5">
+                <hr />
+
+                <h2>5. Dynamic CSS</h2>
+
+                <div className={color ? classes.container : classes.container1} id="centered-like">
+                    <p className={color ? classes.text : classes.text1 } id="centered-like2">CSS Module Styling</p>
+                    <div className="bg-slate-200 mr-4" id="button-like">
+                        <button onClick={handleClick} className="bg-blue-600 hover:bg-blue-900 text-white item">Change Color</button>
+                    </div>
+                </div>
+
+                <p id="paragraph-like">
+                    Learnt how to conditionally change the color of an element by 
+                    leveraging <b>CSS Module</b>(s) and utilizing <b>useEffect</b> hook in 
+                    an event handler. 
                 </p>
 
             </div>

@@ -62,6 +62,14 @@ h2 {
    margin-bottom: 9px;
 }
 
+#centered-like {
+   justify-content: space-between !important;
+}
+
+#centered-like2 {
+   margin-left: 16px;
+}
+
 #paragraph-like {
    --tw-bg-opacity: 1;
    background-color: rgb(220 252 231 / var(--tw-bg-opacity));
