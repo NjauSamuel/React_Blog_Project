@@ -36,6 +36,7 @@ import ReactRouter from "./components/Chapter_12_React_Routing/ReactRouter";
 import Home from "./components/Chapter_12_React_Routing/Pages/Home";
 import About from "./components/Chapter_12_React_Routing/Pages/About";
 import Contact from "./components/Chapter_12_React_Routing/Pages/Contact";
+import NavBar from "./components/Chapter_12_React_Routing/NavBar";
 
 
 function App() {
@@ -124,6 +125,8 @@ function App() {
       <ReactRouter />
 
       {/* React Router */}
+
+      <NavBar />
 
       <Routes>
 
