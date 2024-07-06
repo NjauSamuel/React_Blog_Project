@@ -25,7 +25,9 @@ const ReactRouter = () => {
                     - /home <br />
                     - /about <br />
                     - /contact 
-                </b>
+                </b><br /><br />
+
+                More documenation about Nav-Bars is in the NavBar source code. 
                 
             </p>
         </div>
