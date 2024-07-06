@@ -1,3 +1,6 @@
+import { Routes, Route } from "react-router-dom";
+
+
 import SubComponent from "./components/SubComponent";
 import ClassBasedComponent from "./components/ClassBasedComponent";
 import FunctionalComponent from "./components/FunctionalComponent";
@@ -29,6 +32,11 @@ import PostListWithoutReducer from "./components/Chapter_9/PostListWithoutReduce
 import PostListWithReducer from "./components/Chapter_9/PostListWithReducer";
 import PostListWithCustomHook from "./components/Chapter_9/PostListWithCustomHook";
 import CssStyle from "./components/Chapter_11/CssStyle";
+import ReactRouter from "./components/Chapter_12_React_Routing/ReactRouter";
+import Home from "./components/Chapter_12_React_Routing/Pages/Home";
+import About from "./components/Chapter_12_React_Routing/Pages/About";
+import Contact from "./components/Chapter_12_React_Routing/Pages/Contact";
+
 
 function App() {
   return (
@@ -112,6 +120,20 @@ function App() {
       <PostListWithCustomHook />
 
       <CssStyle />
+
+      <ReactRouter />
+
+      {/* React Router */}
+
+      <Routes>
+
+        <Route path="home" element={<Home />}></Route>
+
+        <Route path="about" element={ <About />}></Route>
+
+        <Route path="contact" element={ <Contact /> }></Route>
+
+      </Routes>
 
     </div>
   )
