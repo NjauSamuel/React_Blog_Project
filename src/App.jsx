@@ -37,6 +37,7 @@ import Home from "./components/Chapter_12_React_Routing/Pages/Home";
 import About from "./components/Chapter_12_React_Routing/Pages/About";
 import Contact from "./components/Chapter_12_React_Routing/Pages/Contact";
 import NavBar from "./components/Chapter_12_React_Routing/NavBar";
+import OrderConfirmation from "./components/Chapter_12_React_Routing/Pages/OrderConfirmation";
 
 
 function App() {
@@ -135,6 +136,8 @@ function App() {
         <Route path="about" element={ <About />}></Route>
 
         <Route path="contact" element={ <Contact /> }></Route>
+
+        <Route path="order-confirmation" element={ <OrderConfirmation /> }></Route>
 
       </Routes>
 

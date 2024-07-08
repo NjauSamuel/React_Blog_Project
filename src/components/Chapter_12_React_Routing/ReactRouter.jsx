@@ -30,6 +30,15 @@ const ReactRouter = () => {
                 More documenation about Nav-Bars is in the NavBar source code. 
                 
             </p>
+
+            <h2>3. Navigating Programatically. </h2>
+
+            <p id="paragraph-like">
+                Learnt how to <b>navigate different routes Programatically</b> . An example is in the navbar below. <br /><br />
+
+                In the Home page below, there is a button that redirects you to the order confirmation page and back. 
+            </p>
+            
         </div>
     )
 }
