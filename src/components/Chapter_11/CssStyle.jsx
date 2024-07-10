@@ -35,7 +35,7 @@ const CssStyle = () => {
 
                 <h2>2. Linking CSS to The Whole HTML</h2>
 
-                <p id="paragraph-like">
+                <div id="paragraph-like">
                     Instead of linking CSS link to an individual component, you can alternatively 
                     link CSS to the whole HTML file using the following steps:
 
@@ -45,7 +45,7 @@ const CssStyle = () => {
                         <b><code>&lt;link rel="stylesheet" href="./src/assets/css/style.css" /&gt;</code></b>
                     </div>
 
-                </p>
+                </div>
 
             </div>
 

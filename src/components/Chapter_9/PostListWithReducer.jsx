@@ -84,13 +84,13 @@ const PostListWithReducer = () => {
                 )
             }
             
-            <p id="paragraph-like">
+            <div id="paragraph-like">
                 When Do we use <b>useReducer</b> and when do we use <b>useState</b>?: <br /><br />
                 <div className="pl-4">
                     If state count is more than two and they are related to each other, 
                     we use <b>useReducer</b> hook. Otherwise, we use the <b>useState</b> hook. 
                 </div>
-            </p>
+            </div>
 
         </div>
     )
