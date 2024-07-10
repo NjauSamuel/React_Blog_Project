@@ -58,6 +58,14 @@ const ReactRouter = () => {
 
                 Try it out in the path: <b>posts/&lt;any value&gt;</b>
             </p>
+
+            <h2>6. Relative Links</h2>
+
+            <p id="paragraph-like">
+                A relative link lacks a forward slash in react and it will inherit the link
+                closest to it. The absolue link has a forward slash and it will be 
+                implemented from the route or the domain.             
+            </p>
             
         </div>
     )
