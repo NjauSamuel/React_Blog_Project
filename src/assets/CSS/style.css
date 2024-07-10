@@ -6,7 +6,7 @@
    text-align: center;
 }
 
-nav {
+.primary-link {
    background-color: aliceblue;
    padding: 16px 32px;
    color: rgb(124, 43, 124);

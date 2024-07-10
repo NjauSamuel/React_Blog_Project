@@ -42,7 +42,9 @@ import NotFound from "./components/Chapter_12_React_Routing/Pages/NotFound";
 import PostList from "./components/Chapter_12_React_Routing/Pages/PostList";
 import PostDetail from "./components/Chapter_12_React_Routing/Pages/PostDetail";
 import HotPosts from "./components/Chapter_12_React_Routing/Pages/HotPosts";
-
+import ProductList from "./components/Chapter_12_React_Routing/Pages/ProductList";
+import FeaturedProducts from "./components/Chapter_12_React_Routing/Pages/FeaturedProducts";
+import NewProducts from "./components/Chapter_12_React_Routing/Pages/NewProducts";
 
 function App() {
   return (
@@ -148,6 +150,11 @@ function App() {
         <Route path="posts/:postId" element={<PostDetail/>}></Route>
 
         <Route path="posts/hot" element={<HotPosts/>}></Route>
+
+        <Route path="products" element={<ProductList/>}>
+          <Route path="featured" element={<FeaturedProducts/>}></Route>
+          <Route path="new" element={<NewProducts/>}></Route>
+        </Route>
 
         <Route></Route>
 
