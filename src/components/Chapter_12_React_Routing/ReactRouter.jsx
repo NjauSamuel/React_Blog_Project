@@ -38,6 +38,17 @@ const ReactRouter = () => {
 
                 In the Home page below, there is a button that redirects you to the order confirmation page and back. 
             </p>
+
+            <h2>4. Implemented the 404 page not found in the Navigation. </h2>
+
+            <p id="paragraph-like">
+                If you try to navigate to a route that is non existent in your browser, React by default
+                does not have a `404` page not found. You have to implement it manually and then link it
+                to your application as follows: <br /> <br />
+
+                <b>&lt;Route path="*" element=&lt;NotFound /&gt;&gt;&lt;/Route&gt; </b>
+
+            </p>
             
         </div>
     )
