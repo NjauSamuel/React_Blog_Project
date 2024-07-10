@@ -38,6 +38,7 @@ import About from "./components/Chapter_12_React_Routing/Pages/About";
 import Contact from "./components/Chapter_12_React_Routing/Pages/Contact";
 import NavBar from "./components/Chapter_12_React_Routing/NavBar";
 import OrderConfirmation from "./components/Chapter_12_React_Routing/Pages/OrderConfirmation";
+import NotFound from "./components/Chapter_12_React_Routing/Pages/NotFound";
 
 
 function App() {
@@ -138,6 +139,8 @@ function App() {
         <Route path="contact" element={ <Contact /> }></Route>
 
         <Route path="order-confirmation" element={ <OrderConfirmation /> }></Route>
+
+        <Route path="*" element={<NotFound />}></Route>
 
       </Routes>
 
