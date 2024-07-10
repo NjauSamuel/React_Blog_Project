@@ -17,6 +17,7 @@ const NavBar = () => {
             <NavLink to="/home">Home</NavLink>
             <NavLink to="/about">About</NavLink>
             <NavLink to="/contact">Contact</NavLink>
+            <NavLink to="/posts">Post</NavLink>
 
             {/* The advantage of the link above is that the links now have an active class
              on the browser which can be styled to indicate the active Link. 

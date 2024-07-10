@@ -19,6 +19,7 @@ const ReactRouter = () => {
             <h2>2. Trying out React Routing</h2>
 
             <p id="paragraph-like">
+                The Navbar is at the bottom of this section. <br />
                 To try out React Routing, try any of the following routes to your browser. <br /><br />
                 
                 <b>
@@ -31,7 +32,7 @@ const ReactRouter = () => {
                 
             </p>
 
-            <h2>3. Navigating Programatically. </h2>
+            <h2>3. Navigating Programatically </h2>
 
             <p id="paragraph-like">
                 Learnt how to <b>navigate different routes Programatically</b> . An example is in the navbar below. <br /><br />
@@ -39,7 +40,7 @@ const ReactRouter = () => {
                 In the Home page below, there is a button that redirects you to the order confirmation page and back. 
             </p>
 
-            <h2>4. Implemented the 404 page not found in the Navigation. </h2>
+            <h2>4. Implemented the 404 page not found in the Navigation </h2>
 
             <p id="paragraph-like">
                 If you try to navigate to a route that is non existent in your browser, React by default
@@ -48,6 +49,14 @@ const ReactRouter = () => {
 
                 <b>&lt;Route path="*" element=&lt;NotFound /&gt;&gt;&lt;/Route&gt; </b>
 
+            </p>
+
+            <h2>5. Dynamic Routing</h2>
+
+            <p id="paragraph-like">
+                Learnt how to navigate dynamicly depending on the parameter on the URL. <br /> <br />
+
+                Try it out in the path: <b>posts/&lt;any value&gt;</b>
             </p>
             
         </div>

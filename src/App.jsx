@@ -39,6 +39,9 @@ import Contact from "./components/Chapter_12_React_Routing/Pages/Contact";
 import NavBar from "./components/Chapter_12_React_Routing/NavBar";
 import OrderConfirmation from "./components/Chapter_12_React_Routing/Pages/OrderConfirmation";
 import NotFound from "./components/Chapter_12_React_Routing/Pages/NotFound";
+import PostList from "./components/Chapter_12_React_Routing/Pages/PostList";
+import PostDetail from "./components/Chapter_12_React_Routing/Pages/PostDetail";
+import HotPosts from "./components/Chapter_12_React_Routing/Pages/HotPosts";
 
 
 function App() {
@@ -139,6 +142,14 @@ function App() {
         <Route path="contact" element={ <Contact /> }></Route>
 
         <Route path="order-confirmation" element={ <OrderConfirmation /> }></Route>
+
+        <Route path="posts" element={<PostList/>}></Route>
+
+        <Route path="posts/:postId" element={<PostDetail/>}></Route>
+
+        <Route path="posts/hot" element={<HotPosts/>}></Route>
+
+        <Route></Route>
 
         <Route path="*" element={<NotFound />}></Route>
 
